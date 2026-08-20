@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TIC — Coming Soon</title>
-  <meta name="description" content="A new dining experience is on its way. TIC opens soon." />
+  <meta name="description" content="TTC Indian Curry — a casual halal eatery serving Indian & Pakistani dishes at Trexler Travel Center, 5829 Tilghman St, Allentown, PA. Open 24 hours." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -116,9 +116,30 @@
       font-size: 1rem;
       font-weight: 300;
       color: var(--muted);
-      max-width: 460px;
-      margin: 0 auto 40px;
+      max-width: 480px;
+      margin: 0 auto 22px;
       line-height: 1.7;
+    }
+    .lead strong { color: var(--cream); font-weight: 500; }
+
+    .badges {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9px;
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+    .badges li {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      padding: 6px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(201,164,92,0.05);
     }
 
     /* Countdown */
@@ -256,9 +277,18 @@
 
     <p class="tagline">A new table is being set.</p>
     <p class="lead">
-      Our kitchen is warming up and our doors will open before you know it.
-      Be the first to taste what's coming — and reserve your seat for opening night.
+      A casual, <strong>halal</strong> eatery serving authentic
+      <strong>Indian &amp; Pakistani</strong> dishes at Trexler Travel Center.
+      Our website is on its way — but our kitchen is already open 24 hours.
     </p>
+
+    <ul class="badges" aria-label="Service options">
+      <li>Halal</li>
+      <li>Indian &amp; Pakistani</li>
+      <li>Vegan options</li>
+      <li>Open 24 hours</li>
+      <li>Dogs allowed outside</li>
+    </ul>
 
     <section class="countdown" id="countdown" aria-label="Time until opening">
       <div class="unit"><div class="num" id="days">00</div><span class="label">Days</span></div>
@@ -287,12 +317,12 @@
       </div>
 
       <div class="contact">
-        123 Vineyard Lane · Your City<br />
-        <a href="tel:+10000000000">+1 (000) 000-0000</a> ·
-        <a href="mailto:hello@tic-restaurant.com">hello@tic-restaurant.com</a>
+        <strong>Trexler Travel Center</strong><br />
+        <a href="https://maps.google.com/?q=5829+Tilghman+St,+Allentown,+PA+18104" target="_blank" rel="noopener">5829 Tilghman St, Allentown, PA 18104</a><br />
+        <a href="tel:+16103956000">(610) 395-6000</a> · Open 24 hours
       </div>
 
-      <div class="copyright">© <span id="year"></span> TIC Restaurant</div>
+      <div class="copyright">© <span id="year"></span> TTC Indian Curry · Allentown, PA</div>
     </footer>
   </main>
 
