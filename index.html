@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TIC — Coming Soon</title>
-  <meta name="description" content="TTC Indian Curry — a casual halal eatery serving Indian & Pakistani dishes at Trexler Travel Center, 5829 Tilghman St, Allentown, PA. Open 24 hours." />
+  <title>Trexler Indian Curries & Grill — Coming Soon</title>
+  <link rel="icon" type="image/webp" href="logo.webp" />
+  <link rel="apple-touch-icon" href="logo.webp" />
+  <meta property="og:title" content="Trexler Indian Curries & Grill" />
+  <meta property="og:image" content="logo.webp" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="Trexler Indian Curries & Grill — a casual halal eatery serving authentic Indian dishes at Trexler Travel Center, 5829 Tilghman St, Allentown, PA. Open 24 hours." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -76,15 +81,34 @@
     }
 
     .brand {
-      font-family: var(--serif);
-      font-weight: 600;
-      font-size: clamp(4.5rem, 18vw, 9rem);
-      line-height: 0.9;
-      letter-spacing: 0.06em;
-      color: var(--cream);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 4px;
     }
 
-    .brand span { color: var(--gold); }
+    .logo {
+      width: clamp(120px, 26vw, 158px);
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px var(--line), 0 14px 40px rgba(0,0,0,0.5), 0 0 60px rgba(201,164,92,0.12);
+      animation: glow 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 0 1px var(--line), 0 14px 40px rgba(0,0,0,0.5), 0 0 40px rgba(201,164,92,0.10); }
+      to   { box-shadow: 0 0 0 1px var(--line), 0 14px 40px rgba(0,0,0,0.5), 0 0 70px rgba(201,164,92,0.22); }
+    }
+
+    .brand-name {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(1.6rem, 6vw, 2.8rem);
+      line-height: 1.05;
+      letter-spacing: 0.04em;
+      color: var(--cream);
+    }
 
     .divider {
       display: flex;
@@ -266,7 +290,10 @@
   <main class="wrap">
     <p class="eyebrow">Something delicious is coming</p>
 
-    <h1 class="brand">T<span>I</span>C</h1>
+    <h1 class="brand">
+      <img src="logo.webp" alt="Trexler Indian Curries &amp; Grill" class="logo" />
+      <span class="brand-name">Trexler Indian Curries &amp; Grill</span>
+    </h1>
 
     <div class="divider" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
@@ -278,13 +305,13 @@
     <p class="tagline">A new table is being set.</p>
     <p class="lead">
       A casual, <strong>halal</strong> eatery serving authentic
-      <strong>Indian &amp; Pakistani</strong> dishes at Trexler Travel Center.
+      <strong>Indian</strong> dishes at Trexler Travel Center.
       Our website is on its way — but our kitchen is already open 24 hours.
     </p>
 
     <ul class="badges" aria-label="Service options">
       <li>Halal</li>
-      <li>Indian &amp; Pakistani</li>
+      <li>Indian Cuisine</li>
       <li>Vegan options</li>
       <li>Open 24 hours</li>
       <li>Dogs allowed outside</li>
